@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Марбия ЕООД | Счетоводни и ТРЗ услуги в София</title>
+    <meta name="description" content="Професионални счетоводни и ТРЗ услуги. Марбия ЕООД - вашият надежден партньор за успеха на Вашия бизнес в София.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a; /* Тъмно синьо за доверие */
+            --accent: #2563eb;  /* Ярко синьо за акценти */
+            --text: #334155;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, #0f172a 100%); color: var(--white); padding: 100px 0; text-align: center; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 20px; font-weight: 700; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+        .btn { display: inline-block; background: var(--accent); color: var(--white); padding: 15px 35px; border-radius: 50px; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3); }
+
+        /* Sections */
+        section { padding: 80px 0; }
+        .section-title { text-align: center; font-size: 2.2rem; color: var(--primary); margin-bottom: 50px; }
+        
+        /* Services */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { background: var(--white); padding: 40px 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #e2e8f0; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-icon { font-size: 2.5rem; margin-bottom: 20px; }
+        .service-card h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.4rem; }
+        .service-card ul { list-style-type: none; }
+        .service-card li { margin-bottom: 10px; padding-left: 20px; position: relative; }
+        .service-card li::before { content: "✓"; color: var(--accent); position: absolute; left: 0; font-weight: bold; }
+
+        /* About */
+        .about { background: var(--light-bg); }
+        .about-content { max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
+        .feature { text-align: center; }
+        .feature h4 { color: var(--accent); margin-bottom: 10px; }
+
+        /* Contact */
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; }
+        .contact-item { padding: 30px; background: var(--light-bg); border-radius: 15px; }
+        .contact-item h3 { color: var(--primary); margin-bottom: 15px; }
+        .contact-item a { color: var(--accent); font-weight: 500; word-break: break-all; }
+
+        /* Footer */
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 30px 0; font-size: 0.9rem; }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* Можем да добавим меню за телефон, ако желаете */
+            .hero h1 { font-size: 2rem; }
+            .hero { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav">
+            <div class="logo">МАРБИЯ <span>ЕООД</span></div>
+            <nav class="nav-links">
+                <a href="#home">Начало</a>
+                <a href="#services">Услуги</a>
+                <a href="#about">За нас</a>
+                <a href="#contact">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Вашият надежден партньор в счетоводството и ТРЗ</h1>
+            <p>Професионални счетоводни и трудова-заплатни услуги, съобразени изцяло с нуждите на Вашия бизнес. Сигурност, точност и индивидуално отношение.</p>
+            <a href="#contact" class="btn">Свържете се с нас</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Нашите услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Счетоводни услуги</h3>
+                    <ul>
+                        <li>Пълно счетоводство на Търговски дружества</li>
+                        <li>Данъчни консултации и планиране</li>
+                        <li>Изготвяне на годишни финансови отчети</li>
+                        <li>Обработка на первични документи</li>
+                        <li>Съдействие при данъчни ревизии</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>ТРЗ и Човешки ресурси</h3>
+                    <ul>
+                        <li>Изчисляване на работни заплати</li>
+                        <li>Управление на служители (НАП/НОИ)</li>
+                        <li>Изготвяне на трудови договори</li>
+                        <li>Месечни и годишни декларации</li>
+                        <li>Консултации по трудово законодателство</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Защо да изберете Марбия ЕООД?</h2>
+            <div class="about-content">
+                <p>Ние в <strong>Марбия ЕООД</strong> разбираме, че зад всеки бизнес стоят хора и амбициозни цели. Нашата мисия е да поемем отговорността за Вашето счетоводство и ТРЗ процеси, за да можете Вие да се фокусирате върху развитието на компанията си. Работим с прецизност, спазваме всички срокове и следим непрекъснато промените в законодателството.</p>
+                <div class="features">
+                    <div class="feature">
+                        <h4>🎯 Точност</h4>
+                        <p>Безкомпромисно спазване на срокове и нормативни изисквания.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>🤝 Партнерство</h4>
+                        <p>Индивидуален подход и прозрачна комуникация с всеки клиент.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>🔒 Сигурност</h4>
+                        <p>Пълна конфиденциалност и защита на Вашите бизнес данни.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Контакти</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>📞 Телефон</h3>
+                    <a href="tel:+359899477197">+359 899 477 197</a>
+                </div>
+                <div class="contact-item">
+                    <h3>✉️ Имейл</h3>
+                    <a href="mailto:b.k.mail@abv.bg">b.k.mail@abv.bg</a>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Адрес</h3>
+                    <p>гр. София, ж.к. "Надежда 2"<br>бл. 244</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Марбия ЕООД. Всички права запазени.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
